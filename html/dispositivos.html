@@ -1,62 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Dispositivos RV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <h1>Laboratorio de Realidad Virtual UPSIN</h1>
+
+
+<body background="/img/geometric-gea2ab09d1_1920.jpg">
+    <header class="container pb-4">
+        <div class="row">
+            <div class="col-sm-12 text-center m-auto pb-2">
+                <img class="d-inline mx-4" src="/img/LOGO-Blanco.png" style="width: 80px; height: 80px;" alt="">
+                <h3 class="d-inline" style="color: white;">Laboratorio de Realidad Virtual UPSIN</h3>
+            </div>
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg bg-light justify-content-center">
+                  <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item mx-5">
+                          <a class="nav-link active" aria-current="page" href="/html/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                          <a class="nav-link active" aria-current="page" href="/html/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                          <a class="nav-link active" aria-current="page" href="/html/dispositivos.html">Dispositivos</a>
+                        </li> 
+            
+                        <li class="nav-item dropdown mx-5">
+                          <a class="nav-link dropdown-toggle" href="#" id="btn-dropdown-service" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="btn-dropdown-service">
+                            <a class="dropdown-item" href="/html/servicios.html">Servicio Social</a>
+                            <a class="dropdown-item" href="/html/servicios.html">Estancias</a>
+                            <a class="dropdown-item" href="/html/servicios.html">Estadias</a>
+                          </div>
+                        </li>
+                        <li class="nav-item mx-5">
+                          <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+        </div>
     </header>
-<!--Botones de navegación-->
-    <div>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Dispositivos</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contactos</a>
-        </nav>
+
+    <div class="container mb-5">
+        <div class="row pb-5">
+            <div class="col-sm-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                        <img src="/img/img1.jpeg" class="d-block m-auto img-fluid" alt="..." style="height: 10%; max-height: 400px;">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="/img/img2.jpeg" class="d-block m-auto img-fluid" alt="..." style="height: 10%; max-height: 400px;">  
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/img3.jpeg" class="d-block m-auto img-fluid" alt="..." style="height: 10%; max-height: 400px;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="row" id="proyectos">
+            <div class="col-sm-12 my-5">
+                <p class="text-center text-white h1">Dispositivos</p>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/oculus.jpg" class="card-img-top" alt="Oculus">
+                          <div class="card-body">
+                            <h5 class="card-title">Oculus DK2</h5>
+                            <p class="card-text" style="text-align: justify;">Oculus DK2 Development Kit, visores de realidad virtual aumentada con el cual se puede obtener perspectivas como si se estuviera dentro del entorno virtual de forma visual. El kit incluye lentes de 4 tamaños distintos adaptables, camará sensorial y cable cargador para complementos en el visor</p>
+                            <a href="https://www.oculus.com/experiences/quest/?locale=es_ES" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/cyber.jpg" class="card-img-top" alt="Cyber">
+                          <div class="card-body">
+                            <h5 class="card-title">CyberForce</h5>
+                            <p class="card-text" style="text-align: justify;">CyberForce es un brazo que con ayuda del guante CyberGloves se puede experimentar objetos virtuales con ayuda de hilos que interactúan dependiendo del software utilizado puedes experimentar tamaños, texturas,etc. El brazo incluye servidor, control de peso, fuente de alimentación y guante CyberGloves.</p>
+                            <a href="http://www.cyberglovesystems.com/cyberforce" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/5dt.jpg" class="card-img-top" alt="Proyecto Phantom Omni">
+                          <div class="card-body">
+                            <h5 class="card-title">5DT GLOVES </h5>
+                            <p class="card-text" style="text-align: justify;">Par de guantes 5DT tienen como función por medio de movimientos de la mano captar detalladamente los movimientos mostrando en su software una gráfica de movimientos que se ha tenido de cada dedo. El equipo incluye los guantes junto con sus respectivos conectores hacia PC usb.</p>
+                            <a href="https://5dt.com/5dt-data-glove-ultra/" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/phantom.jpg" class="card-img-top" alt="Proyecto Phantom Omni">
+                          <div class="card-body">
+                            <h5 class="card-title">Phantom Omni</h5>
+                            <p class="card-text" style="text-align: justify;">Phantom Omni es una herramienta sensorial con la cual se puede simular el uso de un lápiz o un brazo, a la vez que dependiendo del software puede simular distintos tipos de texturas o objetos virtuales con las que se esté trabajando. El equipo cuenta con lápiz óptico, el cuerpo del Phantom Omni junto con sus claves de poder y conector IEEE.</p>
+                            <a href="https://es.3dsystems.com/haptics-devices/3d-systems-phantom-premium" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-sm-4 pb-2">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/cam.jpg" class="card-img-top" alt="Proyecto Phantom Omni">
+                          <div class="card-body">
+                            <h5 class="card-title">Cámaras Optitrack</h5>
+                            <p class="card-text" style="text-align: justify;">Las cámaras Optic Track son cámaras que detectan el trackeo de movimientos, ya sean de personas o ciertos objetos que llegue a capturar, con ayuda de ciertos trajes y complementos de los mismos. El kit de Optick Track incluye trajes de dos tamaños, velcros con puntos para trackeo y tripodes para colocar las cámaras en distintas posiciones.</p>
+                            <a href="https://optitrack.com" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pb-2">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/xbox.jpg" class="card-img-top" alt="Proyecto Phantom Omni">
+                          <div class="card-body">
+                            <h5 class="card-title">Kinect Xbox360</h5>
+                            <p class="card-text" style="text-align: justify;">Con la ayuda del Kinect se puede trackear movimientos corporales mediante las cámaras ópticas con las que cuenta, obteniendo coordenadas de ciertas partes del cuerpo e incluso se puede trackear otras partes del cuerpo como la mano del mismo usuario. El Kinect cuenta con su cable conector usb y el mismo Kinect.</p>
+                            <a href="https://azure.microsoft.com/es-es/products/kinect-dk/" class="btn btn-primary">Página Oficial</a>
+                          </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!--Imagen de referencia-->
-    <section>
-        <div>
-            <img src="" alt="" >
-            <h2>¡Información acerca de Nuestro Laboratorio!</h2>
-        </div>
-    </section>
-
-    <!--Inicio de los dispositivos-->
-    <main>
-        <label for="">Dispositivos de Realidad Virtual</label>
-
-        <!--Dispositivo 1-->
-        <div>
-            <p>Oculus: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ducimus quo iure exercitationem enim ullam maxime incidunt, dicta ipsa officia autem blanditiis molestiae veniam dolores, sint nulla neque, temporibus at.</p>
-            <img src="/img/ejemplo.webp" alt="" style="width:250px; height:150px;" >
-        </div>
-
-
-         <!--Dispositivo 2-->
-         <div>
-            <p>Cyber: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ducimus quo iure exercitationem enim ullam maxime incidunt, dicta ipsa officia autem blanditiis molestiae veniam dolores, sint nulla neque, temporibus at.</p>
-            <img src="/img/ejemplo.webp" alt="" style="width:250px; height:150px;" >
-        </div>
-
-
-         <!--Dispositivo 3-->
-        <div>
-            <p>Camaras: <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ducimus quo iure exercitationem enim ullam maxime incidunt, dicta ipsa officia autem blanditiis molestiae veniam dolores, sint nulla neque, temporibus at.</p>
-            <img src="/img/ejemplo.webp" alt="" style="width:250px; height:150px;" >
-        </div>
-    </main>
     <!--Fin de los dispositivos-->
-
-    <footer>
-        <label for="">2022, UNIVERSIDAD POLITECNICA DE SINALOA, TODOS LOS DERECHOS RESERVADOS.</label>
+    <footer class="text-center py-5 bg-dark text-white" style="height: 70px;">
+        2022, UNIVERSIDAD POLITECNICA DE SINALOA, TODOS LOS DERECHOS RESERVADOS.
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 </html>
